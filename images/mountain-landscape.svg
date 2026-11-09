@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1200" viewBox="0 0 1920 1200" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="960" y1="0" x2="960" y2="1200" gradientUnits="userSpaceOnUse"><stop stop-color="#151c18"/><stop offset=".53" stop-color="#626554"/><stop offset="1" stop-color="#d1c5a0"/></linearGradient>
+    <linearGradient id="mist" x1="960" y1="540" x2="960" y2="1130" gradientUnits="userSpaceOnUse"><stop stop-color="#a6a88d" stop-opacity="0"/><stop offset=".48" stop-color="#b9b99b" stop-opacity=".38"/><stop offset="1" stop-color="#b9b99b" stop-opacity="0"/></linearGradient>
+    <linearGradient id="mountain" x1="1420" y1="420" x2="1420" y2="1120" gradientUnits="userSpaceOnUse"><stop stop-color="#555c4d"/><stop offset="1" stop-color="#252e27"/></linearGradient>
+    <radialGradient id="sun-glow"><stop stop-color="#ca7952" stop-opacity=".2"/><stop offset="1" stop-color="#ca7952" stop-opacity="0"/></radialGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".12"/></feComponentTransfer><feBlend in="SourceGraphic" mode="soft-light"/></filter>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1920v1200H0z"/>
+  <circle cx="1432" cy="330" r="290" fill="url(#sun-glow)"/>
+  <circle cx="1432" cy="330" r="100" fill="#a7553b" opacity=".64"/>
+  <g filter="url(#grain)">
+    <path d="M0 770 96 674l50 27 85-143 66 36 65-67 40 22 75-135 74 109 52-42 88 87 55-30 58 44 105-94 63 83 68-43 98 65 100-175 74 70 52-48 94 104 66-64 72 41 77-94 68 57 71-49 68 55 91-40v579H0Z" fill="#858975" opacity=".54"/>
+    <path d="M0 899 68 859l67-72 97 45 55-85 89 41 90-123 47 32 76-105 56 67 61-25 77 70 80-78 58 68 101-108 45 28 84-131 76 95 44-44 81 82 98-177 67 91 73-47 59 56 72-97 91 104 60-39 59 63v520H0Z" fill="#6d7663"/>
+    <path d="m0 1005 86-87 72 42 100-138 50 48 86-83 99 76 55-44 88 28 92-85 74 39 99-101 51 18 56-72 75 49 67-123 52 54 73-67 66 43 84-169 43 70 38-25 58 49 64-90 83 83 53-40 62 87 102-103 81 42 54-58 65 34v668H0Z" fill="url(#mountain)"/>
+    <g stroke="#b9b69a" opacity=".18" stroke-linecap="round">
+      <path d="m1360 465-45 149-42 41-18 113m102-293-18 151 34-30-24 92m22-204 15 79-16 74 43 44-15 66"/>
+      <path d="m1106 622-37 98 28-18-22 85m36-151 11 84-16 37m79-119-38 123 32-26-20 125"/>
+      <path d="m1547 550-30 98 18-8-17 76m41-136 3 73 26 34-4 64m-685-42-46 102 24-9-8 76m37-139 15 73-29 43"/>
+      <path d="m394 801-24 74-42 53m160-56-15 60 21-20-15 61m143-184-31 91 18-8-24 59"/>
+    </g>
+    <path d="M0 680h1920v470H0z" fill="url(#mist)"/>
+    <path d="M0 1094c161-27 217-43 340-21s209 9 312-29 171-19 264-45 142-11 220 35 124 15 198-54 93-47 151-11 135 18 196-39 145-54 239-81v351H0Z" fill="#27342b"/>
+    <path d="M0 1162c163-16 244-45 369-17s214-7 333-34 212 3 317 32 141-39 238-33 141 19 228-28 134-53 215-34 149 9 220-27v179H0Z" fill="#16231e"/>
+  </g>
+  <g stroke="#343b31" stroke-width="2" stroke-linecap="round" opacity=".8"><path d="m1597 306 13 5 13-7m41 34 10 4 9-5m-130-17 9 3 8-5"/></g>
+</svg>
